@@ -24,7 +24,7 @@ body {
   margin: 10px 0;
 }
 
-.mytable{
-    display: flex;
-    flex-direction: row;
+.mytable {
+  display: flex;
+  flex-direction: row;
 }
