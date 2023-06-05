@@ -11,11 +11,27 @@
 <body>
     <h1 class="textBook">Book-storage</h1>
       <hr class="lineGet">
+    
+     
 
-      <tbody class="book-list">
+
+      <section id="book-list">
          
-      </tbody>
+      </section>
+    
 
-      
+      <form id="book-form" method="post">
+           <div class="nameInput">
+             <input type="text" required maxlength="500" placeholder="Title" id="title">
+           </div>
+
+           <div class="nameInput">
+            <input type="text" required maxlength="500" placeholder="Author" id="author">
+          </div>
+
+          <button type="submit" value="add book" class="btn">Add book</button>
+      </form>
+
+     
 </body>
 </html>
