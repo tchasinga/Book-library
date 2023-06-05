@@ -21,7 +21,9 @@ class UI {
     row.innerHTML = `
             <td>${book.title}</td>
             <td>${book.author}</td>
+            <hr>
             <td><button class="delete">remove</button></td>
+           
         `;
     list.appendChild(row);
   }
