@@ -1,6 +1,5 @@
 /* eslint-disable no-use-before-define */
 // Book class : book presentation
-
 // eslint-disable-next-line max-classes-per-file
 class Book {
   constructor(title, author) {
