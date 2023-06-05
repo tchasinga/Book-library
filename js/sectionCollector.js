@@ -49,6 +49,14 @@ class Store{
     }
 
    // event delete you can add
+    static removeBook(book) {
+        const books = Store.getBooks()
+        const index = books.indexOf(book)
+        books.splice(index, 1)
+        localStorage.clear
+        localStorage.setItem('books', JSON.stringify(books));
+        
+    }
 }
 
 // Event : display books
@@ -70,4 +78,4 @@ document.querySelector('#book-form').addEventListener('submit', (e) =>{
     // clear fields
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
-})
+});
