@@ -87,10 +87,3 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
   Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
-
-// const removeBTN = document.querySelector('.delete');
-
-// removeBTN.addEventListener('click',() => {
-//     // Store.removeBook
-//     console.log('remove the book now')
-// })
