@@ -49,7 +49,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-PASTE LIVE DEMO ON THIS LINE
+>Click this Link to View [Live Versio](https://tchasinga.github.io/Book-library/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
