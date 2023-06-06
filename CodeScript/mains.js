@@ -25,8 +25,7 @@ function initializeBookStore() {
       this.books.forEach((book) => {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${book.title}</td>
-            <td class="getClose">${book.author}</td>
+            <p><span id="name">${book.title}</span> by ${book.author}</p>
             <hr>
             <td><button class="delete">remove</button></td>
           `;
@@ -65,7 +64,7 @@ function initializeBookStore() {
       document.querySelector('#book-list').addEventListener('click', (e) => {
         if (e.target.classList.contains('delete')) {
           const row = e.target.parentElement.parentElement;
-          const title = row.querySelector('td:first-child').textContent;
+          const title = row.querySelector('#name').textContent;
           this.removeBook(title);
         }
       });
