@@ -65,3 +65,7 @@ tr {
   margin-top: 10px;
   position: relative;
 }
+
+#book-list tr:nth-child(even){
+  background-color: gray;
+}
