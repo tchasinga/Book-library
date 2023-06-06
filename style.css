@@ -11,12 +11,12 @@ body {
   margin: 0 auto;
   max-width: 1400px;
   padding: 0;
-  background: #3C3A39;
+  background: #3c3a39;
 }
 
 main {
-  color: #E2E2E2;
-  background: #D2A97A;
+  color: #e2e2e2;
+  background: #d2a97a;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,11 +66,23 @@ tr {
   margin-top: 10px;
 }
 
+#book-form button:hover {
+  cursor: pointer;
+  background: black;
+  color: #fff;
+  transform: scale(1.1);
+  transition: all 0.3s ease-out;
+}
+
 #book-form input {
   margin-top: 10px;
   position: relative;
 }
 
-#book-list tr:nth-child(even){
+#book-list tr:nth-child(even) {
   background-color: gray;
+}
+
+#book-list button:hover {
+  cursor: pointer;
 }
