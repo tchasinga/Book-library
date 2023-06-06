@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Awesome Book</title>
-</head>
-<body>
-    <h1 class="textBook">Book-storage</h1>
-      <hr class="lineGet">
-    
-     
+  </head>
 
+  <body>
+    <main>
 
-      <section id="book-list">
-         
+      <h1 class="textBook">Book-storage</h1>
+  
+      <section id="book-container">
+        <div id="book-list">
+          
+        </div>
       </section>
-    
-
+  
       <form id="book-form" method="post">
-           <div class="nameInput">
-             <input type="text" required maxlength="500" placeholder="Title" id="title">
-           </div>
-
-           <div class="nameInput">
-            <input type="text" required maxlength="500" placeholder="Author" id="author">
-          </div>
-
-          <button type="submit" value="add book" class="btn">Add book</button>
+        <div class="nameInput">
+          <input type="text" required maxlength="500" placeholder="Title" id="title">
+        </div>
+  
+        <div class="nameInput">
+          <input type="text" required maxlength="500" placeholder="Author" id="author">
+        </div>
+  
+        <button type="submit" value="add book" class="btn">Add book</button>
       </form>
+    </main>
 
-     <!--Code script-->
-<script type="module" src="CodeScript/mains.js"></script>
-</body>
+    <!--Code script-->
+    <script type="module" src="CodeScript/mains.js"></script>
+  </body>
+
 </html>
