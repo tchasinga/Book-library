@@ -14,7 +14,7 @@ body {
   background: #fff;
 }
 
-main{
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,9 +31,9 @@ main{
   color: #000;
 }
 
-#book-container{
+#book-container {
   width: 100%;
-  border:  2px black solid;
+  border: 2px black solid;
   padding: 10px;
 }
 
@@ -43,23 +43,25 @@ main{
   justify-content: space-between;
 }
 
-tr{
+tr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
 }
-.getClose{
+
+.getClose {
   position: relative;
   left: -90px;
 }
-#book-form button{
-float: right; 
-margin-top: 10px;
+
+#book-form button {
+  float: right;
+  margin-top: 10px;
 }
 
-#book-form input{
+#book-form input {
   margin-top: 10px;
   position: relative;
 }
