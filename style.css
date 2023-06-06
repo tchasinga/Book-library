@@ -50,7 +50,10 @@ tr{
   align-items: center;
   margin-bottom: 8px;
 }
-
+.getClose{
+  position: relative;
+  left: -90px;
+}
 #book-form button{
 float: right; 
 margin-top: 10px;

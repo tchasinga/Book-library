@@ -26,7 +26,7 @@ function initializeBookStore() {
         const row = document.createElement('tr');
         row.innerHTML = `
             <td>${book.title}</td>
-            <td>${book.author}</td>
+            <td class="getClose">${book.author}</td>
             <hr>
             <td><button class="delete">remove</button></td>
           `;
