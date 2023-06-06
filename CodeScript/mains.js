@@ -25,9 +25,7 @@ function initializeBookStore() {
       this.books.forEach((book) => {
         const row = document.createElement('tr');
         row.innerHTML = `
-            <td>${book.title}</td>
-            <td>${book.author}</td>
-            <hr>
+            <p>"${book.title}" by ${book.author}</p>
             <td><button class="delete">remove</button></td>
           `;
         list.appendChild(row);
