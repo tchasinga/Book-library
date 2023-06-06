@@ -11,10 +11,12 @@ body {
   margin: 0 auto;
   max-width: 1400px;
   padding: 0;
-  background: #fff;
+  background: #3C3A39;
 }
 
 main {
+  color: #E2E2E2;
+  background: #D2A97A;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,13 +30,16 @@ main {
 .textBook {
   font-size: 2rem;
   font-weight: 500;
-  color: #000;
+  background: #cf934f85;
+  border: 2px black solid;
+  border-radius: 15px;
+  padding: 8px 22px;
 }
 
 #book-container {
+  background: #cf934f85;
   width: 100%;
   border: 2px black solid;
-  padding: 10px;
 }
 
 #book-list {
@@ -44,11 +49,11 @@ main {
 }
 
 tr {
+  padding: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 8px;
 }
 
 .getClose {
