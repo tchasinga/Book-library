@@ -22,13 +22,13 @@ function initializeBookStore() {
       const list = document.querySelector('#book-list');
       list.innerHTML = '';
 
-      this.books.forEach((book) => {
+      this.books.forEach((book, index) => {
         const row = document.createElement('tr');
+        row.dataset.id = index; // Assign a unique identifier using the book's index
         row.innerHTML = `
-            <p>"<span id="name">${book.title}</span>" by ${book.author}</p>
-            <hr>
-            <td><button class="delete">remove</button></td>
-          `;
+          <td><span id="name">${book.title}</span> by ${book.author}</td>
+          <td><button class="delete">remove</button></td>
+        `;
         list.appendChild(row);
       });
     }
@@ -43,13 +43,15 @@ function initializeBookStore() {
       this.displayBooks();
     }
 
-    removeBook(title) {
-      this.books = this.books.filter((book) => book.title !== title);
+    removeBook(id) {
+      this.books.splice(id, 1); // Remove the book using its index
       this.saveBooksToStorage();
       this.displayBooks();
     }
 
     setupEventListeners() {
+      const bookList = document.querySelector('#book-list');
+
       document.querySelector('#book-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const titleInput = document.querySelector('#title');
@@ -61,11 +63,11 @@ function initializeBookStore() {
         authorInput.value = '';
       });
 
-      document.querySelector('#book-list').addEventListener('click', (e) => {
+      bookList.addEventListener('click', (e) => {
         if (e.target.classList.contains('delete')) {
           const row = e.target.parentElement.parentElement;
-          const title = row.querySelector('#name').textContent;
-          this.removeBook(title);
+          const id = parseInt(row.dataset.id, 10);
+          this.removeBook(id);
         }
       });
     }
