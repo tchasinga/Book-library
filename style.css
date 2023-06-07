@@ -12,10 +12,65 @@ body {
   max-width: 1400px;
   padding: 0;
   background: #3c3a39;
+  color: #e2e2e2;
 }
 
+/* Start working on header */
+
+.hidden {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+}
+
+nav ul li:nth-child(2) {
+  border-right: 2px black solid;
+  border-left: 2px black solid;
+  padding: 0 10px 0 10px;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  color: red;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #cf934f85;
+  padding: 10px 10px 10px 10px;
+}
+
+footer {
+  border: 1px black solid;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  padding: 10px;
+  background: #cf934f85;
+}
+
+/* header section */
+
 main {
-  color: #e2e2e2;
   background: #d2a97a;
   display: flex;
   flex-direction: column;
@@ -23,8 +78,8 @@ main {
   gap: 20px;
   margin: 100px auto 0;
   align-items: center;
-  max-width: 500px;
   padding: 16px;
+  min-height: 100%;
 }
 
 .textBook {
@@ -34,18 +89,28 @@ main {
   border: 2px black solid;
   border-radius: 15px;
   padding: 8px 22px;
+  text-align: center;
+}
+
+.textBooking {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  left: 15%;
 }
 
 #book-container {
-  background: #cf934f85;
   width: 100%;
-  border: 2px black solid;
 }
 
 #book-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px black solid;
+  background: #cf934f85;
+  margin-top: 10px;
 }
 
 tr {
@@ -62,8 +127,11 @@ tr {
 }
 
 #book-form button {
-  float: right;
   margin-top: 10px;
+  position: relative;
+  left: 104%;
+  padding: 8px;
+  border-bottom-right-radius: 10px;
 }
 
 #book-form button:hover {
@@ -74,9 +142,13 @@ tr {
   transition: all 0.3s ease-out;
 }
 
+/* form styling */
+
 #book-form input {
   margin-top: 10px;
   position: relative;
+  width: 150%;
+  padding: 10px;
 }
 
 #book-list tr:nth-child(even) {
@@ -85,4 +157,24 @@ tr {
 
 #book-list button:hover {
   cursor: pointer;
+}
+
+/* Contact styling */
+#details {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  gap: 32px;
+  margin: 16px auto;
+  padding: 16px;
+}
+
+.fa-github {
+  margin: 0 auto;
+  font-size: 64px;
+  color: inherit;
+}
+
+#date {
+  text-align: right;
 }

@@ -78,3 +78,48 @@ function initializeBookStore() {
 }
 
 initializeBookStore();
+
+// Single Page App functionality
+const bookSection = document.getElementById('book-container');
+const formSection = document.getElementById('form-section');
+const contactSection = document.getElementById('contact-section');
+
+const bookBtn = document.getElementById('list-link');
+const formBtn = document.getElementById('book-link');
+const contactBtn = document.getElementById('contact-link');
+
+// Event listeners to show/hide sections
+bookBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  bookSection.classList.remove('hidden');
+  formSection.classList.add('hidden');
+  contactSection.classList.add('hidden');
+});
+
+formBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  formSection.classList.remove('hidden');
+  bookSection.classList.add('hidden');
+  contactSection.classList.add('hidden');
+});
+
+contactBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  contactSection.classList.remove('hidden');
+  formSection.classList.add('hidden');
+  bookSection.classList.add('hidden');
+});
+
+// Date element
+const dateContainer = document.getElementById('date');
+
+function updateDate() {
+  const date = new Date();
+  dateContainer.innerHTML = date;
+}
+
+// Initial update
+updateDate();
+
+// Update the date every second (1000 milliseconds)
+setInterval(updateDate, 1000);
