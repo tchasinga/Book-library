@@ -13,10 +13,12 @@ body {
   padding: 0;
   background: #3c3a39;
   color: #e2e2e2;
- 
 }
 /* Start working on header */
 
+.hidden{
+  display: none;
+}
 
 li{
   list-style: none;
