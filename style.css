@@ -158,4 +158,19 @@ tr {
   cursor: pointer;
 }
 
+/* Contact styling */
+#details{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  gap: 32px;
+  margin: 16px auto;
+  padding: 16px;
+}
 
+
+.fa-github{
+  margin: 0 auto;
+  font-size: 64px;
+  color: inherit;
+}
