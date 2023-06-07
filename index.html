@@ -10,28 +10,53 @@
   </head>
 
   <body>
+
+    <header>
+      <nav>
+        <h4>Book List</h4>
+        <ul>
+          <li><a href="#">List</a></li>
+          <li><a href="#">Add Book</a></li>
+          <li><a href="#">Contact</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+
     <main>
 
-      <h1 class="textBook">Book-storage</h1>
-  
+      
       <section id="book-container">
+        <h1 class="textBook">Book-storage</h1>
         <div id="book-list">
           
         </div>
       </section>
   
-      <form id="book-form" method="post">
-        <div class="nameInput">
-          <input type="text" required maxlength="500" placeholder="Title" id="title">
-        </div>
-  
-        <div class="nameInput">
-          <input type="text" required maxlength="500" placeholder="Author" id="author">
-        </div>
-  
-        <button type="submit" value="add book" class="btn">Add book</button>
-      </form>
+      <section id="form-section">
+        <form id="book-form" method="post">
+          <div class="nameInput">
+            <input type="text" required maxlength="500" placeholder="Title" id="title">
+          </div>
+    
+          <div class="nameInput">
+            <input type="text" required maxlength="500" placeholder="Author" id="author">
+          </div>
+    
+          <button type="submit" value="add book" class="btn">Add book</button>
+        </form>
+      </section>
+
+      <section id="contact-section">
+        <a href="#"><div id="tchisanga">GitHub info</div></a>
+        <a href="#"><div id="alfred">GitHub info</div></a>       
+      </section>
+
     </main>
+
+    <footer>
+      <p>Copyright Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, reprehenderit?</p>
+    </footer>
 
     <!--Code script-->
     <script type="module" src="CodeScript/mains.js"></script>

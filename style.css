@@ -12,10 +12,19 @@ body {
   max-width: 1400px;
   padding: 0;
   background: #3c3a39;
+  color: #e2e2e2;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
 }
 
 main {
-  color: #e2e2e2;
   background: #d2a97a;
   display: flex;
   flex-direction: column;
