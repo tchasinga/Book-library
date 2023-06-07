@@ -109,3 +109,8 @@ contactBtn.addEventListener('click', (event) => {
   formSection.classList.add('hidden');
   bookSection.classList.add('hidden');
 });
+
+// Date element
+const date = new Date;
+const dateContainer = document.getElementById('date');
+dateContainer.innerHTML = date

@@ -168,9 +168,12 @@ tr {
   padding: 16px;
 }
 
-
 .fa-github{
   margin: 0 auto;
   font-size: 64px;
   color: inherit;
+}
+
+#date{
+  text-align: right;
 }
