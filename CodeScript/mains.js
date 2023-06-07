@@ -111,6 +111,15 @@ contactBtn.addEventListener('click', (event) => {
 });
 
 // Date element
-const date = new Date;
 const dateContainer = document.getElementById('date');
-dateContainer.innerHTML = date
+
+function updateDate() {
+  const date = new Date();
+  dateContainer.innerHTML = date;
+}
+
+// Initial update
+updateDate();
+
+// Update the date every second (1000 milliseconds)
+setInterval(updateDate, 1000);
