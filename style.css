@@ -37,6 +37,12 @@ nav ul {
   gap: 10px;
 }
 
+nav ul li:nth-child(2) {
+  border-right: 2px black solid;
+  border-left: 2px black solid;
+  padding: 0px 10px 0px 10px;
+}
+
 nav ul li:hover{
   cursor: pointer;
   color: red;
@@ -82,18 +88,28 @@ main {
   border: 2px black solid;
   border-radius: 15px;
   padding: 8px 22px;
+  text-align: center;
+}
+
+.textBooking{
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  left: 15%;
 }
 
 #book-container {
-  background: #cf934f85;
   width: 100%;
-  border: 2px black solid;
 }
 
 #book-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px black solid;
+  background: #cf934f85;
+  margin-top: 10px;
 }
 
 tr {
@@ -110,8 +126,11 @@ tr {
 }
 
 #book-form button {
-  float: right;
   margin-top: 10px;
+  position: relative;
+  left: 104%;
+  padding: 8px;
+  border-bottom-right-radius: 10px;
 }
 
 #book-form button:hover {
@@ -127,7 +146,8 @@ tr {
 #book-form input {
   margin-top: 10px;
   position: relative;
-  width: 100%;
+  width: 150%;
+  padding: 10px;
 }
 
 #book-list tr:nth-child(even) {
