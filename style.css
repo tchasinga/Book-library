@@ -13,7 +13,10 @@ body {
   padding: 0;
   background: #3c3a39;
   color: #e2e2e2;
+ 
 }
+/* Start working on header */
+
 
 li{
   list-style: none;
@@ -24,6 +27,40 @@ a{
   text-decoration: none;
 }
 
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+}
+
+nav ul li:hover{
+  cursor: pointer;
+  color: red;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #cf934f85;
+  padding: 10px 10px 10px 10px;
+}
+
+footer{
+  border: 1px black solid;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  padding: 10px;
+  background: #cf934f85;
+}
+
+/* header section */
+
 main {
   background: #d2a97a;
   display: flex;
@@ -32,8 +69,8 @@ main {
   gap: 20px;
   margin: 100px auto 0;
   align-items: center;
-  max-width: 500px;
   padding: 16px;
+  min-height: 100%;
 }
 
 .textBook {
@@ -83,9 +120,12 @@ tr {
   transition: all 0.3s ease-out;
 }
 
+/* form styling */
+
 #book-form input {
   margin-top: 10px;
   position: relative;
+  width: 100%;
 }
 
 #book-list tr:nth-child(even) {
@@ -95,3 +135,5 @@ tr {
 #book-list button:hover {
   cursor: pointer;
 }
+
+
